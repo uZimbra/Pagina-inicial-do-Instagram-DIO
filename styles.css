@@ -1,0 +1,134 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.screen-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.login-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 86px 12px 86px;
+}
+
+.login-user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 291px;
+  height: 122px;
+}
+
+.login-user-avatar img {
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 34px;
+  width: 222px;
+  height: 30px;
+}
+
+.continue-login-button {
+  padding: 5px 9px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 3px;
+  width: 201px;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.login-switch-account {
+  margin: 15px;
+  padding: 0px 40px;
+}
+
+.switch-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch-account button {
+  background: none;
+  border: none;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(var(--d69,0,149,246),1);
+}
+
+@media (max-width: 950px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .instagram-wrapper {
+      width: 90%;
+  }
+
+  .instagram-phone {
+      display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-section {
+    border: none;
+  }
+
+  .screen-wrapper {
+    align-self: start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
